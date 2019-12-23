@@ -7,7 +7,7 @@ class PracticesController < ApplicationController
     def create
       @practice = Practice.new(practice_params)
       if @practice.save
-        redirect_to practices_path
+        redirect_to courses_path
       else
         render :new
       end
@@ -38,7 +38,7 @@ class PracticesController < ApplicationController
     def destroy
       @practice = Practice.find(params[:id])
       if @practice.destroy
-        redirect_to practices_path
+        redirect_to courses_path
       else
         redirect_to practices_path, error: "This lab not delete"
       end
