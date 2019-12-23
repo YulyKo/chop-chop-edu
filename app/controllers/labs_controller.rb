@@ -39,7 +39,7 @@ class LabsController < ApplicationController
   def destroy
     @lab = Lab.find(params[:id])
     if @lab.destroy
-      redirect_to labs_path
+      redirect_to courses_path
     else
       redirect_to labs_path, error: "This lab not delete"
     end

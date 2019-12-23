@@ -17,7 +17,7 @@
   <% @themes.each do |theme| %>
     <div class="row pt-4">
       <div class="col-sm-6">
-        <h1><%= theme.theme_name %></h1>
+        <h2><%= theme.theme_name %></h2>
       </div>
       <div class="col-sm">
         <%= link_to 'Показати всі матеріали', theme_path(theme), method: :get, :class => 'btn btn-outline-success' %>
