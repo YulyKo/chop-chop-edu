@@ -1,4 +1,4 @@
-<h1 class="text-center pt-2">Log in</h1>
+<h1 class="text-center pt-2">Ввійти</h1>
 <div class="container">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <form>
@@ -6,8 +6,6 @@
         <div class="row">
           <label for="exampleInputEmail1" class="col-sm-1">Email:</label>
           <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => "col-sm-3 form-control" %>
-          <small id="emailHelp" class="form-text text-muted">Ми ніколи не поділимося вашим електронним листом ні з ким
-            іншим.</small>
         </div>
       </div>
       <div class="form-group">
